@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Calibration-GL-AR" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Debug/Calibration-GL-AR" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters=" &gt;  debug" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="./include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="C:\Program Files\mingw-w64\x86_64-4.8.2-posix-seh-rt_v3-rev4\mingw64\x86_64-w64-mingw32\lib\libopengl32.a" />
+					<Add library="C:\Program Files\mingw-w64\x86_64-4.8.2-posix-seh-rt_v3-rev4\mingw64\x86_64-w64-mingw32\lib\libfreeglut.a" />
+					<Add library="C:\Program Files\mingw-w64\x86_64-4.8.2-posix-seh-rt_v3-rev4\mingw64\x86_64-w64-mingw32\lib\libglu32.a" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="CV_VERSION" value="2410" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add directory="$(#cv.include)" />
+		</Compiler>
+		<Linker>
+		</Linker>
+			<Add directory="$(#cv.bin)" />
+		<Unit filename="include/calibrate.cpp" />
+		<Unit filename="include/calibrate.h" />
+		<Unit filename="include/camera.cpp" />
+		<Unit filename="include/camera.h" />
+		<Unit filename="include/glInterface.cpp" />
+		<Unit filename="include/glInterface.h" />
+		<Unit filename="include/glTools.cpp" />
+		<Unit filename="include/glTools.h" />
+		<Unit filename="include/glm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/glm.h" />
+		<Unit filename="include/main.cpp" />
+		<Unit filename="include/main.h" />
+		<Unit filename="include/texture.cpp" />
+		<Unit filename="include/texture.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
